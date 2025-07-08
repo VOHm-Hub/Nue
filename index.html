@@ -40,6 +40,26 @@
 <button onclicks="checkVitals()">Check Condition</button>
 <p id=""healthStatus"></p>
 </setion>
+<script>
+    function checkVitals() {
+const heartRate = parseInt(document.getElementById("heartLevel").value);
+const oxygen =parseInt(document.getElementById("oxygenLevel").value);
+const status = document.getElementById("healthStatus");
+if (isNaN(heartRate) || isNaN(oxygen)) {
+    status.innerHTML ="Please enter valid vitals.";
+    return;
+    }
+    if (heartRAte >= 60 && heartRate <= 100 && oxygen >= 95) {
+        status.innerHTML = "Patient vitals are normal.";
+    }else {
+        status.innerHTML = "Critical condition detected! Emergency response initiated.";
+        setTimeout(() => {
+            alert("Emergency services have been notified.");
+            window.location.href = "https://www.emergencyservices.com";}, 5000);
+        }
+    }
+    
+</script>
 
     <section id="about">
         <h2>About Us</h2>
