@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>HealthCare Plus</title>
+    <h1>Welcome to HealthCare Plus</h1>
+    <p>Your health is our priority. We provide the best healthcare services.</p>
+    <nav>
+        <a href="#reminder">Medicine</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#doctors">Doctors</a>
+    </nav>
+    <section id="reminder">
+        <h2>Medicine Reminder</h2>
+        <p>Set up your medicine reminders to never miss a dose.</p>
+        <form id="reminderForm">
+            <label>Medicine Name:</label>
+            <input type="text" id="medicine-name" required />
+            <label>Time (24hr format):  </label>
+            <input type="time" id="medicine-time"  required />
+            <button type="submit">Set Reminder</button>
+        </form>
+        <p id="reminder status">   </p>
+    </section>
+    <section id="health-monitor">  
+    <h2>Health Monitor</h2>
+<p>This system monitors simulated patient vitals and auto-initiates emergency response under critical conditions.</p> 
+<label>Heart Rate (bpm):</label>
+<input type="number" id="heartRate" placeholder="e.g. 85" />
+<br/>
+<label>Oxygen level (%):</label>
+<input type="number" id="oxygenlevel" placeholder="e.g. 98" />
+<br/>
+<button onclicks="checkVitals()">Check Condition</button>
+<p id=""healthStatus"></p>
+</setion>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>HealthCare Plus is dedicated to providing top-notch healthcare services to our community.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>General Check-ups</li>
+            <li>Emergency Services</li>
+            <li>Specialized Treatments</li>
+            <li>Health Consultations</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@healthcareplus.com</p>
+        <p>Phone: +1 234 567 890</p>
+    </section>
+    <section id="doctors">
+        <h2>Our Doctors</h2>
+        <p>Meet our team of experienced healthcare professionals.</p>
+        <ul>
+            <li>Dr. John Smith - General Practitioner</li>
+            <li>Dr. Jane Doe - Cardiologist</li>
+            <li>Dr. Emily Johnson - Pediatrician</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2023 HealthCare Plus. All rights reserved.</p>
+
+             
+
+</body>
+</html>
